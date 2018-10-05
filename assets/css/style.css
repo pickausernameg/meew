@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:700i');
+
+html { 
+  height: 100%; 
+  background: var(--bgcol);  
+  color: #FFF; 
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  margin: 0px;
+}
+
+*,
+*:before,
+*:after {
+  --bgcol: #1A2A3A;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.LinkMeew{
+  position: absolute;
+  font-size: 100px;
+  font-family: 'Chakra Petch', sans-serif;
+  box-shadow: 0px 0px 20px 7px rgba(255, 255, 255, 0.25), inset 0px 0px 18px 2px rgba(255, 255, 255, 0.29), inset 0 -2px 5px 0 rgba(0,0,0,0.25);
+  border-radius: 20px;
+  animation: Fade 5s;
+}
+
+.LinkMeew a{
+  text-decoration: none;
+}
+
+.box{
+  position: relative;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+.box:hover{
+  color: #000000;
+  background-image: linear-gradient(to right, #ff006766 , #81a7ff4f);
+}
+
+svg {
+  stroke: white;
+  fill: none;
+  stroke-width: 0px;
+  overflow:visible;
+  stroke-linecap: round;
+  stroke-dasharray: 320;
+}
+
+@media ( orientation: landscape ) {
+  svg {
+    width: 30vw;
+  }
+}
+
+@media ( orientation: portrait ) {
+  svg {
+    height: 60vh;
+  }
+}
+
+.group {
+  animation: rot 30s steps(10);
+  transform-origin:50% 50%;
+}
+
+path {
+  animation: fillit 6s ease-in;
+}
+
+.p1 {
+  stroke-dasharray: 100;
+}
+
+.p3 {
+  stroke-dasharray: 150;
+}
+
+.p7, .p8 {
+  stroke-dasharray: 550;
+}
+
+@keyframes fillit {
+  0% {
+    stroke-dashoffset: 320;
+    stroke-width:0;
+    stroke: white;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    stroke-width: 11;
+    stroke: white;
+  }
+  50.01% {
+    stroke-dashoffset: 320;
+    stroke-width: 0;
+    stroke:  var(--bgcol); 
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 11;
+    stroke:  var(--bgcol); 
+  }
+}
+
+circle.big {
+  animation: col 6s linear;
+}
+
+@keyframes col {
+  0% {
+    fill: var(--bgcol); 
+  }
+  50% {
+    fill: var(--bgcol); 
+  }
+  50.01% {
+    fill:white;
+  }
+  100% {
+    fill:white;
+  }
+}
+
+@keyframes rot {
+  to {
+    transform: rotate(1350deg);
+  }
+}
+
+@keyframes Fade{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
