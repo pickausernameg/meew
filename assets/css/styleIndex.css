@@ -25,10 +25,61 @@ body {
   box-sizing: border-box;
 }
 
+.languages{
+  position: absolute;
+  top: 70px;
+  right: 210px;
+}
+
+#en{
+  background-image: url(../images/United-States-Flag.png);
+  width: 35px;
+  height: 33px;
+  background-size: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 5px;
+  animation:Fade 7s;
+}
+
+#pt-br{
+  background-image: url(../images/Brazil-Flag.png);
+  width: 35px;
+  height: 34px;
+  background-size: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 5px;
+  animation:Fade 7s;
+}
+
+#es{
+  background-image: url(../images/Spain-Flag.png);
+  width: 35px;
+  height: 34px;
+  background-size: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 5px;
+  animation:Fade 7s;
+}
+
 .BeginBlock{
   position: absolute;
   text-align: center;
   animation: Fade 5s;
+}
+
+.IndexText{
+  position: relative;
+  padding: 10px;
+  font-size: 22px;
+  font-family: 'Chakra Petch', sans-serif;
+  animation: Fade 7s;
+  animation-delay: 2s;
 }
 
 .SocialMedia{
@@ -212,4 +263,8 @@ circle.big {
   100%{
     opacity: 1;
   }
+}
+
+
+@media screen and (max-width: 762px){
 }
