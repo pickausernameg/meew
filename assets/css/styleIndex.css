@@ -1,270 +1,63 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:700i');
-
-html { 
-  height: 100%; 
-  background: var(--bgcol);  
-  color: #FFF; 
+.titulo{
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 7px;
+	font-weight: bold;
+	text-align: center;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+.description{
+	padding: 10px 0px 15px;	
+	text-align: left;
+}
+
+.contact{
+	font-weight: bold;	
+	text-align: left;
+}
+
+.TranspBox{
   height: 100%;
-  margin: 0px;
-}
-
-*,
-*:before,
-*:after {
-  --bgcol: #1A2A3A;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.languages{
-  position: absolute;
-  top: 70px;
-  right: 210px;
-}
-
-#en{
-  background-image: url(../images/United-States-Flag.png);
-  width: 35px;
-  height: 33px;
-  background-size: 100%;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  margin: 5px;
-  animation:Fade 7s;
-}
-
-#pt-br{
-  background-image: url(../images/Brazil-Flag.png);
-  width: 35px;
-  height: 34px;
-  background-size: 100%;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  margin: 5px;
-  animation:Fade 7s;
-}
-
-#es{
-  background-image: url(../images/Spain-Flag.png);
-  width: 35px;
-  height: 34px;
-  background-size: 100%;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  margin: 5px;
-  animation:Fade 7s;
-}
-
-.BeginBlock{
-  position: absolute;
-  text-align: center;
-  animation: Fade 5s;
-}
-
-.IndexText{
-  position: relative;
-  padding: 10px;
-  font-size: 22px;
-  font-family: 'Chakra Petch', sans-serif;
-  animation: Fade 7s;
-  animation-delay: 2s;
-}
-
-.SocialMedia{
-  position: relative;
-  top: 20px;
-  animation: Fade 7s;
-  animation-delay: 2s;
-}
-
-.SocialMedia a{
+  background: transparent;
   position: relative;
   display: inline-block;
-  background: white;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
-  transition: .5s;
-  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
-  margin: 10px 30px;
+  padding: 0px 120px;
 }
 
-.SocialMedia a:before {
-  content: '';
-  position: absolute;
-  background: #dcdcdc;
-  bottom: -19px;
-  left: -10px;
-  height: 19px;
-  width: 100%;
-  transition: .5s;
-  transform: rotate(0deg) skewX(-45deg);
+.tudo{
+	position: relative;
 }
 
-.SocialMedia a:after {
-  content: '';
-  position: absolute;
-  background: #828282;
-  top: 10px;
-  left: -20px;
-  height: 100%;
-  width: 20px;
-  transition: .5s;
-  transform: rotate(0deg) skewY(-45deg);
+.pic{
+  background-image: url(../images/handshake.png);
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px;
 }
 
-.SocialMedia a:hover {
-  transform: perspective(1000px) rotate(-30deg) skewX(25deg) translate(20px,-20px);
-  transition: .5s;
-  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
-}
-
-.SocialMedia i{
-  font-size: -webkit-xxx-large;
-  color: #142686;
-}
-
-.LinkMeew{
-  position: relative;
-  font-size: 100px;
-  font-family: 'Chakra Petch', sans-serif;
-  box-shadow: 0px 0px 20px 7px rgba(255, 255, 255, 0.25), inset 0px 0px 18px 2px rgba(255, 255, 255, 0.29), inset 0 -2px 5px 0 rgba(0,0,0,0.25);
-  border-radius: 20px;
-}
-
-.LinkMeew a{
-  text-decoration: none;
-}
-
-.box{
-  position: relative;
-  color: white;
-  padding: 20px;
-  border-radius: 20px;
-  transition: .6s;
-  overflow: hidden;
-}
-
-.box:hover{
-  color: #000000;
-  background-image: linear-gradient(to right, #ff006766 , #81a7ff4f);
-}
-
-svg {
-  stroke: white;
-  fill: none;
-  stroke-width: 0px;
-  overflow:visible;
-  stroke-linecap: round;
-  stroke-dasharray: 320;
-}
-
-@media ( orientation: landscape ) {
-  svg {
-    width: 30vw;
-  }
-}
-
-@media ( orientation: portrait ) {
-  svg {
-    height: 60vh;
-  }
-}
-
-.group {
-  animation: rot 30s steps(10);
-  transform-origin:50% 50%;
-}
-
-path {
-  animation: fillit 6s ease-in;
-}
-
-.p1 {
-  stroke-dasharray: 100;
-}
-
-.p3 {
-  stroke-dasharray: 150;
-}
-
-.p7, .p8 {
-  stroke-dasharray: 550;
-}
-
-@keyframes fillit {
-  0% {
-    stroke-dashoffset: 320;
-    stroke-width:0;
-    stroke: white;
-  }
-  50% {
-    stroke-dashoffset: 0;
-    stroke-width: 11;
-    stroke: white;
-  }
-  50.01% {
-    stroke-dashoffset: 320;
-    stroke-width: 0;
-    stroke:  var(--bgcol); 
-  }
-  100% {
-    stroke-dashoffset: 0;
-    stroke-width: 11;
-    stroke:  var(--bgcol); 
-  }
-}
-
-circle.big {
-  animation: col 6s linear;
-}
-
-@keyframes col {
-  0% {
-    fill: var(--bgcol); 
-  }
-  50% {
-    fill: var(--bgcol); 
-  }
-  50.01% {
-    fill:white;
-  }
-  100% {
-    fill:white;
-  }
-}
-
-@keyframes rot {
-  to {
-    transform: rotate(1350deg);
-  }
-}
-
-@keyframes Fade{
-  0%{
-    opacity: 0;
-  }
-  50%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+.anuncios{
+	background: white; 
+	margin: 20px; 
+	text-align: center; 
+	border-radius: 15px;
 }
 
 
-@media screen and (max-width: 762px){
+@media screen and (max-width: 768px){
+
+	.TranspBox{
+		padding: 0px 15px;
+	}
+
+	.pic{
+		margin: 0px;
+	}
+
+	.anuncios{
+		margin: 20px 0px;
+	}
+
 }
+
+

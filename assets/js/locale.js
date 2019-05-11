@@ -12,22 +12,28 @@ var arrLang = {
 	'en' : {
 		'ClickParaSaber' : 'click to learn more',
 		'About' : 'About',
-		'WhatWeWant' : 'What We Want',
+		'Help' : 'Help',
 		'Partners' : 'Partners',
+		'Announce' : 'Donate',
+		'LetMeIn' : 'Let me in.',
 	},
 
 	'pt-br' : {
 		'ClickParaSaber' : 'clique e saiba mais',
 		'About' : 'Sobre',
-		'WhatWeWant' : 	'O Que Queremos',
+		'Help' : 	'Ajuda',
 		'Partners' : 'Parceiros',
+		'Announce' : 'Anunciar',
+		'LetMeIn' : 'Deixe-me entrar.',
 	},
 
 	'es' : {
 		'ClickParaSaber' : 'clic y sepa más',
 		'About' : 'Sobre',
-		'WhatWeWant' : 'Nuestro Concepto',
+		'Help' : 'Ayuda',
 		'Partners' : 'Socios',
+		'Announce' : 'Anunciar',
+		'LetMeIn' : 'Déjame entrar.',
 	},
 }
 
